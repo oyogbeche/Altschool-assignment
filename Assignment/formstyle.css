@@ -1,0 +1,262 @@
+:root {
+    --input-bg-color: #FAFAFA;
+    --font-family: sans-serif,
+}
+
+.formpage_container {
+    width: 50%;
+    display: flex;
+    padding-block-start: 5%;
+}
+
+.form_section {
+    margin-inline-start: 5% ;
+    
+}
+
+.signup_section {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin-block-start: 20%;
+}
+
+.signup_section h2 {
+    margin-bottom: 0px;
+    color: rgb(11, 30, 75)
+}
+
+.signup_section p {
+    margin-bottom: 15px;
+    color: rgb(133, 136, 141)
+}
+
+.form_item {
+    display: inline-flex;
+    flex-direction: column;
+    gap:10%;
+}
+
+.input_container div:nth-of-type(2) {
+    margin-left:30px;
+}
+.input_container label {
+    color:rgba(0, 0, 0, 0.88);
+    margin-block-start: 20px;
+}
+
+.input {
+    width: 190px;
+    height:35px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px ; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    background-color: var(--input-bg-color);   
+    color: #b0b2b6;
+    outline: none;
+
+}
+
+.input:focus {
+    border-color: #66afe9;  
+    outline: none;
+}
+
+.select:focus {
+    border-color: #545bca;
+}
+
+.select{
+    width: 210px;
+    height:55px;
+    
+}
+.hbu_select {
+    width: 95%;
+    height:55px;
+}
+.form_section > p {
+    float:right;
+    font-weight: 700;
+}
+
+.form_section > p span {
+    color:#0367f2;
+    text-decoration: solid;
+}
+
+
+.submit_container a {
+    color:#2054D2;
+    text-decoration: solid;
+}
+.submit_container p {
+    color: rgb(133, 136, 141)
+}
+.submit_container {
+    width:95%;
+    margin-block-start: 30px;
+    line-height: 1.5;
+    font-family: var(--font-family);
+    font-size: 0.9em;
+}
+.button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #6a6ff5;
+    border: none;
+    border-radius: 5px;
+    gap:8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #545bca;
+}
+
+.button_icon {
+    width:20px;
+    filter: brightness(0) invert(1);
+    padding-left:10px;
+}
+
+nav a {
+    text-decoration: solid;
+    color: white;
+    flex: 1
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(4, 11, 102);
+    padding-left: 10%;
+}
+
+@media (max-width: 375px) {
+    .formpage_container {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .signup_section {
+        width:100%;
+    }
+    .form_item {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .input_container div:nth-of-type(2) {
+        margin-left: 0px;
+    }
+    .input {
+        width: 94%;
+        height:25px;
+        padding: 10px;
+        font-size: 12px;
+        border: 2px ; 
+        border-radius: 5px; 
+        margin-top: 10px; 
+        background-color: var(--input-bg-color);   
+        color: #b0b2b6;
+        outline: none;
+    }
+    .select{
+        width: 100%;
+        height:44px;
+        
+    }
+    .hbu_select {
+        width: 100%;
+        height:44px;
+    }
+    .button {
+        width:100%;
+    }
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .formpage_container {
+        width: 80%;
+        display: flex;
+        margin-left: 0%;
+    }
+    .signup_section {
+        width:100%;
+    }
+    .form_item {
+        display: inline-flex;
+        flex-direction: column;
+        
+    }
+    .signup_section {
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin-block-start: 20%;
+    }
+    .input_container div:nth-of-type(2) {
+        margin-left: 40px;
+    }
+    .input {
+        width: 180px;
+        height:35px;
+        padding: 10px;
+        font-size: 14px;
+        border: 2px ; 
+        border-radius: 5px; 
+        margin-top: 10px; 
+        background-color: var(--input-bg-color);   
+        color: #b0b2b6;
+        outline: none;
+    }
+    .select{
+        width: 195px;
+        height:55px;
+        
+    }
+    .hbu_select {
+        width: 95%;
+        height:55px;
+    }
+    .button {
+        width:100%;
+    }
+
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+}

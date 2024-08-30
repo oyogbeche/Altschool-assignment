@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./formstyle.css" rel="stylesheet">
+    <title>Application Form</title>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./form.html">Form</a>
+            <a href="./table.html">Table</a>
+            <a href="./media.html">Media</a>
+        </nav>
+    </header>
+    <div class="formpage_container">
+        
+        <section class="form_section">
+            <p>Already an AltSchooler? <a href="https://portal.altschoolafrica.com/auth/login"><span>Sign in!</span></a></p>
+
+            <form class="signup_section">
+                <h2>Signup</h2>
+                <p>Take the next steps to apply at AltSchool Africa</p>
+                <div class="input_container">
+                    <div class="form_item">
+                        <label for="first_name"> First Name</label>
+                        <input required type="text" name="first_name" placeholder="Enter first name" id="first_name" class="input"> 
+                    </div>
+                    <div class="form_item">
+                        <label for="last_name">Last Name</label>
+                        <input required type="text" name="last_name" placeholder="Enter last name" id="last_name" class="input">
+                    </div>
+                </div>
+                
+                <div class="input_container">
+                    <div class="form_item">
+                        <label for="gender">Gender</label>
+                        <select name="gender" class="input select">
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form_item">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input required type="date" name="dateofbirth" id="date_of_birth" class="input">
+                    </div>
+                </div>    
+                
+                <div class="input_container">
+                    <div class="form_item">
+                        <label for="email_address">Email Address</label>
+                        <input required type="email" name="email_address" placeholder="Enter email address" id="email_address" class="input">
+                    </div>
+                    
+                    <div class="form_item">
+                        <label for="phone_number">Phone Number</label>
+                        <input required name="phone_number" placeholder="08154387000" id="phone_number" class="input">
+                    </div>
+                </div>
+                
+
+                <div class="input_container">
+                    <div class="form_item">
+                        <label for="country">Country</label>
+                        <select name="country" class="input select" >
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="Afghanista">Afghanista</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Andora">Andora</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                    </div>
+    
+                    <div class="form_item">
+                        <label for="residence">State/City of Residence</label>
+                        <input required name="residence" placeholder="Enter your state of residence" id="residence" class="input">
+                    </div>
+                </div >
+
+                <div class="form_item input_container">
+                    <label for="about_us">How did you hear about us?</label>
+                    <select name="about_us" class="input hbu_select">
+                        <option value="" disabled selected>Select channel</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Billboard">Billboard</option>
+                    </select>
+                </div>
+
+                <div class="input_container">
+                    <div class="form_item">
+                        <label for="password">Password</label>
+                        <input required type="password" name="password" placeholder="Enter password" id="password" class="input">
+                    </div>
+    
+                    <div class="form_item">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input required type="password" name="password" placeholder="Enter password again" id="confirm_password" class="input">
+                    </div>
+                </div>
+                
+                <section class="submit_container">
+                    <p>By clicking continue I agree to <a href="https://altschoolafrica.com/terms-and-conditions">Terms of Use</a>
+                    and acknowledge that I have read the <a href="https://altschoolafrica.com/privacy-policy">Privacy Policy.</a>
+                    </p>
+
+                    <button type="submit" class="button" value="Submit ">Submit
+                        <img src="./assets/icons/Arrow.png" alt="arrow icon" class="button_icon">
+                    </button>
+                </section>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

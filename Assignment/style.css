@@ -1,0 +1,108 @@
+:root {
+    --input-bg-color: #FAFAFA;
+    --font-family: sans-serif,
+    --th-bg-color: #f4f4f4; 
+    --thead-bg-color:grey;
+    --table-hover: #f1f1f1;
+}
+
+/* Biography page styling starts here */
+
+.biography_main {
+    text-align: center;
+}
+.biography_container, .biography_altschool {
+    width:80%;
+    padding-inline-start: 10%;
+    text-align: justify;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    
+}
+
+
+
+.biography_footer div{
+    text-align: center;
+    width:100%;
+    background-color: rgb(4, 11, 102);
+    font-family: var(--font-family);
+    margin-block-start: 10%;
+}
+
+.biography_footer div a {
+    color: white;
+    text-decoration: solid;
+}
+.h2_form {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+}
+.biography_container h3 {
+    font-size: 2em;
+}
+
+nav a {
+    text-decoration: solid;
+    color: white;
+    flex: 1
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(4, 11, 102);
+    padding-left: 10%;
+}
+
+
+/* responsive screens */
+/* mobile screen */
+
+@media (max-width: 475px) {
+  
+    body{
+        width: 95%;
+    }
+    h2 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+
+}
+
+@media (min-width: 765px) and (max-width: 1023px) {
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+}

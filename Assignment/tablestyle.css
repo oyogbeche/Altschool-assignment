@@ -1,0 +1,113 @@
+:root {
+    --font-family: sans-serif,
+    --th-bg-color: #f4f4f4; 
+    --thead-bg-color:grey;
+    --table-hover: #f1f1f1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-block-start: 10%;
+}
+
+thead th {
+    background-color: var(--thead-bg-color);
+    text-align: center;
+    font-size: 2em;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left; 
+    border: 1px solid #ddd;
+} 
+
+th {
+    background-color: var(--th-bg-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+td {
+    font-size: 1em;
+}
+td:hover {
+    background-color: var(--table-hover);
+}
+
+th:hover {
+    background-color: white;
+}
+
+nav a {
+    text-decoration: solid;
+    color: white;
+    flex: 1
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(4, 11, 102);
+    padding-left: 10%;
+}
+
+/* responsive styling */
+
+@media (max-width: 475px) {
+    table{
+        display: block;
+        width: 90%;
+    }
+
+    thead tr {
+        display: none; 
+    }
+
+    th {
+        background-color: var(--th-bg-color);
+    }
+
+    tr {
+        margin-bottom: 5px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    td {
+        display: flex;
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+}
+
+@media (min-width:765px) and (max-width: 1023px ) {
+    nav a {
+        text-decoration: solid;
+        color: white;
+        flex: 1
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(4, 11, 102);
+        padding-left: 10%;
+    }
+}
